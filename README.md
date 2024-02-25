@@ -1,6 +1,6 @@
 # 👀 클론코딩 과제,,
 - 애플스토어 : https://www.apple.com/kr/store
-- 클론코딩 : ㅇㄹㄴㅇㄹ
+- 클론코딩 : https://sanghwa-first-clone.netlify.app/
 
 ## 작업 기간
 - 2/24~25
