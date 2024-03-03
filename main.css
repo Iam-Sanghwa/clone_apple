@@ -405,7 +405,6 @@ main .main-inner .sessions .sessions-section .fl-col .session .main{
 main .main-inner .quick-btn .quick-btn-comment{
   width:100%;
   height: 49px;
-  padding: 0 0 14px 0;
 }
 main .main-inner .quick-btn .btn-section{
   display: flex;
@@ -414,13 +413,14 @@ main .main-inner .quick-btn .btn-section{
 }
 main .main-inner .quick-btn .btn-section .btns{
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 main .main-inner .quick-btn .btn-section .btns a{
   color: #1d1d1f;
   font-size: 14px;
 }
-main .main-inner .quick-btn .btn-section .btn{
+main .main-inner .quick-btn .btn-section .btns .btn{
   padding: 7px 15px;
   background-color: #e2e2e4;
   border-radius: 15px;
