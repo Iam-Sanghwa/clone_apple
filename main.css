@@ -1,19 +1,27 @@
+:root{
+  --black: #313131;
+  --lightgray: #6e6e73;
+  --gray: #585859;  
+  --darkgray: #555;
+  --hyperlink: #0065cc;
+  --applewhite: #e2e2e4;
+  --backgroundwhite: #f5f5f7;
+}
+
 body{
-  color: #313131;
+  color: var(--black);
   font-size:16px;
   font-weight: 400;
   line-height: 1.4;
   font-family: "SF Pro Display", "SF-Pro", "Nanum Gothic", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  background-color: #f5f5f7;
+  background-color: var(--backgroundwhite);
 }
 main{
   letter-spacing: 0;
 }
 a{
   text-decoration: none;
-  color: #585859;  
+  color: var(--gray);  
 }
 .inner{
   position: relative;
@@ -44,8 +52,6 @@ header .navigation-bar .menu{
 header .navigation-bar .menu .material-icons{ 
   font-size: 15px;
 }
-header .navigation-bar .menu .item{
-}
 header .navigation-bar .menu .item .item__name{
   display: flex;
   height: 44px;
@@ -56,11 +62,11 @@ header .navigation-bar .menu .item .item__name a{
 }
 header .navigation-bar .menu .item:hover .item__info{
   display: block;
-  background-color: white;
+  background-color: var(--backgroundwhite);
 }
 header .navigation-bar .menu .item:hover .navigation-bar{
   display: block;
-  background-color: white;
+  background-color: var(--backgroundwhite);
   transition: .3s;
 }
 header .navigation-bar .menu .item .item__info{
@@ -74,20 +80,18 @@ header .navigation-bar .menu .item .item__info{
 }
 header .navigation-bar .menu .item .item__info .item__info__detail{
   font-weight: 700;
+  font-size: 12px;
 }
 header .navigation-bar .menu .item .item__info .item__info__detail h6{
   display: block;
   padding: 0 0 10px 0;
   font-size: 12px;
   font-weight: 400;
-  color: #555;
+  color: var(--darkgray);
 }
 header .navigation-bar .menu .item .item__info .item__info__detail .inner{
   display: flex;
   gap:80px;
-}
-header .navigation-bar .menu .item .item__info .item__info__detail {
-  font-size: 12px;
 }
 header .navigation-bar .menu .item .item__info .item__info__detail .inner>li:first-child{
   font-size: 25px;
@@ -105,7 +109,7 @@ main .banner{
   margin: 0 auto;
   height: 60px;
   padding: 16px 0;
-  background-color: white;
+  background-color: var(--backgroundwhite);
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -114,7 +118,7 @@ main .banner{
 }
 
 main a{
-  color: #0065cc;
+  color: var(--hyperlink);
 }
 
 main .banner .swiper{
@@ -168,7 +172,7 @@ main .main-inner .inline-black{
 main .main-inner .inline-gray{
   font-size: 28px;
   font-weight: 600;
-  color: #6e6e73;
+  color: var(--lightgray);
   display:inline;
 }
 
@@ -189,7 +193,7 @@ main .main-inner .top .left .ad-main{
   display: inline;
 }
 main .main-inner .top .left .ad-sub{
-  color: #6e6e73;
+  color: var(--darkgray);
   font-size: 44px;
   font-weight: 600;
   display: inline;
@@ -229,15 +233,6 @@ main .main-inner .top .right .right-contents img{
   height:35px;
   object-fit: cover;
 }
-#white{
-  color: #f5f5f7;
-}
-#gray{
-  color: #6e6e73;
-}
-#black{
-  color: #1d1d1f;
-}
 main .main-inner .card-section{
   display: flex;
   height: 198px;
@@ -260,13 +255,13 @@ main .main-inner .card-section .card .card__image{
   object-fit: cover;
 }
 main .main-inner .card-section .card a{
-  color: #1d1d1f;
+  color: var(--black);
   margin: 0;
 }
 main .main-inner .card-section .card a:hover{
   text-decoration: underline;
 }
-m   ain .main-inner .new-arrival .new-comment{
+main .main-inner .new-arrival .new-comment{
   width:100%;
   height: 49px;
   padding: 0 0 14px 0;
@@ -285,6 +280,10 @@ main .main-inner .new-arrival .new-card-section .new-card{
   width: 400px;
   height: 500px;
   transition: .3s;
+}
+main .main-inner .new-arrival .new-card-section .new-card .white{
+  
+  color: var(--applewhite);
 }
 main .main-inner .new-arrival .new-card-section .swiper-slide:hover .new-card{
   transform: scale(1.01);
@@ -308,19 +307,19 @@ main .main-inner .new-arrival .new-card-section .new-card .description .new-abs{
   font-size: 12px;
   margin: 0 0 4.8px;
   padding: 0 0 8px;
-  color: #1d1d1f;
+  color: var(--black);
 }
 main .main-inner .new-arrival .new-card-section .new-card .description .new-main{
   display:block;
   font-size: 26px;
   font-weight: 600;
-  color: #1d1d1f;
+  color: var(--black);
 }
 main .main-inner .new-arrival .new-card-section .new-card .description .new-detail{
   display:block;
   font-size: 17px;
   padding: 10px 0 0 0;
-  color: #1d1d1f;
+  color: var(--black);
 }
 
 main .main-inner .sessions .session-comment{
@@ -345,6 +344,9 @@ main .main-inner .sessions .sessions-section .session{
   height: 500px;
   transition: .3s;
 }
+main .main-inner .sessions .sessions-section .session{
+  color: var(--lightgray);
+}
 main .main-inner .sessions .sessions-section .session .session-image{
   position: absolute;
   width: 480px;
@@ -363,19 +365,19 @@ main .main-inner .sessions .sessions-section .session .abs{
   font-size: 12px;
   margin: 0 0 4.8px;
   padding: 0 0 8px;
-  color: #1d1d1f;
+  color: var(--black);
 }
 main .main-inner .sessions .sessions-section .session .main{
   display:block;
   font-size: 26px;
   font-weight: 600;
-  color: #1d1d1f;
+  color: var(--black);
 }
 main .main-inner .sessions .sessions-section .session .detail{
   display:block;
   font-size: 15px;
   padding: 10px 0 0 0;
-  color: #1d1d1f;
+  color: var(--black);
 }
 main .main-inner .sessions .sessions-section .fl-col{
   display: flex;
@@ -400,12 +402,11 @@ main .main-inner .sessions .sessions-section .fl-col .session .main{
   display:block;
   font-size: 20px;
   font-weight: 600;
-  color: #1d1d1f;
+  color: var(--black);
 }
 main .main-inner .quick-btn .quick-btn-comment{
   width:100%;
   height: 49px;
-  padding: 0 0 14px 0;
 }
 main .main-inner .quick-btn .btn-section{
   display: flex;
@@ -414,15 +415,16 @@ main .main-inner .quick-btn .btn-section{
 }
 main .main-inner .quick-btn .btn-section .btns{
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 main .main-inner .quick-btn .btn-section .btns a{
-  color: #1d1d1f;
+  color: var(--black);
   font-size: 14px;
 }
-main .main-inner .quick-btn .btn-section .btn{
+main .main-inner .quick-btn .btn-section .btns .btn{
   padding: 7px 15px;
-  background-color: #e2e2e4;
+  background-color: var(--applewhite);
   border-radius: 15px;
 }
 
@@ -430,7 +432,7 @@ footer .footer-inner{
   position: relative;
   width: 980px;
   margin: 0 auto;
-  color: #6e6e73;
+  color: var(--lightgray);
 }
 
 footer .footer-inner .notes{
@@ -467,7 +469,7 @@ footer .footer-inner .footer-menu .five-board .category-title{
   }
 footer .footer-inner .footer-menu .five-board a.ft-lst{
   font-size: 12px;
-  color: #6e6e73;
+  color: var(--lightgray);
 }
 footer .footer-inner .footer-menu .five-board .ft-lst:hover {
   text-decoration: underline;
